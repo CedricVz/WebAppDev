@@ -1,0 +1,260 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	background-color: black;
+}
+
+.logo {
+	height: 50px;
+	margin-top: 7px;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.logo a {
+	font-size: 1.3em;
+	color: white;
+}
+
+.logo a span {
+	font-weight: 300;
+}
+
+
+/* Remove margins and padding from the list, and add a black background color */
+
+ul.topnav {
+	margin-top:0px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	width: 750px;
+	
+	list-style: none;
+}
+
+
+/* Float the list items side by side */
+
+ul.topnav li {
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display-inline;
+}
+
+
+/* Style the links inside the list items */
+
+ul.topnav li a {
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
+	width: 150px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Change background color of links on hover */
+
+ul.topnav li a:hover {
+	background-color: #555;
+}
+
+ul.topnav li a:active {
+	background-color: #553E5C;
+}
+
+ul.topnav .active a:link {
+	background-color: #553E5C;
+}
+
+ul.topnav a:visited {
+	background-color: #553E5C;
+}
+
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+
+ul.topnav li.icon {
+	display: none;
+}
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width:680px) {
+	ul.topnav li:not(: first-child) {
+		display: none;
+	}
+	ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	}
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+
+@media screen and (max-width:680px) {
+	ul.topnav.responsive {
+		position: relative;
+	}
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.topnav.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: center;
+	}
+}
+
+.input[type=text] {
+	width: 130px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+	height: 100%;
+	/* 100% Full-height */
+	width: 0;
+	/* 0 width - change this with JavaScript */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #111;
+	/* Black*/
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	padding-top: 60px;
+	/* Place content 60px from the top */
+	transition: 0.5s;
+	/* 0.5 second transition effect to slide in the sidenav */
+	padding-top:200px;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+	font-family: 'Open Sans', sans-serif;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block;
+	transition: 0.3s
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+	color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+.ideal_rt60 {
+	margin-top: 50px;	
+}
+
+.footer {
+	color: #fff;
+}
+.landing-div {
+	margin-top:30px;
+}
+
+h2 {
+	color:white;
+	text-align:center;
+}
+
+div.membership-box {
+	margin-top:100px;
+	padding-top:10px;
+	text-align:center;
+	width:300px;
+	height:auto;
+	border:3px solid #553E5C;
+	margin:auto;
+}
+
+.membership-box form {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+
+div.calculators-box {
+	padding-top:10px;
+	text-align:center;
+	width:600px;
+	height:600;
+	border:3px solid #553E5C;
+	margin:auto;
+}
+
+.home-window {
+	margin:auto;
+	width:800px;
+	height:auto;
+	color:white;
+	background: black;
+	text-align:center;
+}
